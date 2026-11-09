@@ -1,7 +1,7 @@
 ﻿# Збирання PC Benchmark: іконка -> PyInstaller (.exe) -> Inno Setup (установник)
 #   powershell -ExecutionPolicy Bypass -File build.ps1            # остання версія
-#   powershell -ExecutionPolicy Bypass -File build.ps1 -Version 0.8
-param([string]$Version = "0.8")
+#   powershell -ExecutionPolicy Bypass -File build.ps1 -Version 0.10
+param([string]$Version = "0.10")
 $ErrorActionPreference = "Stop"
 $root = $PSScriptRoot
 $script = Join-Path $root "benchmark_v$Version.py"
@@ -29,4 +29,4 @@ if (-not $iscc) { throw "Не знайдено Inno Setup 6 (ISCC.exe): https://
 & $iscc "/DAppVersion=$Version" (Join-Path $root "installer\pc_benchmark.iss")
 if ($LASTEXITCODE -ne 0) { throw "Inno Setup завершився з помилкою" }
 
-Write-Host "Готово: $(Join-Path $root "build\installer\PC-Benchmark-Setup-$Version.exe")"
+Write-Host "Готово: $(Join-Path $root "build\installer\PC-Benchmark-Setup.exe")"

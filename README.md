@@ -19,18 +19,19 @@
 
 ## Встановлення
 
-**[⬇ Завантажити PC-Benchmark-Setup-0.8.exe](https://github.com/zimbo812/pc-benchmark/releases/download/v0.8/PC-Benchmark-Setup-0.8.exe)** (10,5 МБ) і запустити.
+**[⬇ Завантажити PC-Benchmark-Setup.exe](https://github.com/zimbo812/pc-benchmark/releases/latest/download/PC-Benchmark-Setup.exe)** (остання версія) і запустити.
 Усі версії — у розділі [Releases](https://github.com/zimbo812/pc-benchmark/releases).
 Установник не потребує прав адміністратора, створює ярлики та за бажанням додає програму в автозапуск Windows.
+Після запуску програма сама перевіряє, чи вийшла нова версія, і пропонує оновитися.
 
 ## Запуск з вихідного коду
 
 Потрібен Python 3.8+ (Windows; на macOS/Linux працюють усі тести, крім GPU).
 
 ```
-python benchmark_v0.8.py                     # графічний інтерфейс
-python benchmark_v0.8.py --cli --stress 60   # консольний режим
-python benchmark_v0.8.py --help              # усі параметри
+python benchmark_v0.10.py                    # графічний інтерфейс
+python benchmark_v0.10.py --cli --stress 60  # консольний режим
+python benchmark_v0.10.py --help             # усі параметри
 ```
 
 ## Збирання .exe та установника
@@ -38,10 +39,10 @@ python benchmark_v0.8.py --help              # усі параметри
 Потрібні [PyInstaller](https://pyinstaller.org) (`pip install pyinstaller`) та [Inno Setup 6](https://jrsoftware.org/isdl.php).
 
 ```
-powershell -ExecutionPolicy Bypass -File build.ps1 -Version 0.8
+powershell -ExecutionPolicy Bypass -File build.ps1 -Version 0.10
 ```
 
-Результат: `build\installer\PC-Benchmark-Setup-0.8.exe`.
+Результат: `build\installer\PC-Benchmark-Setup.exe`.
 
 ## Структура
 

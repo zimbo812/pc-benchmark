@@ -3,7 +3,7 @@
 
 #define AppName "PC Benchmark"
 #ifndef AppVersion
-  #define AppVersion "0.8"
+  #define AppVersion "0.10"
 #endif
 #define AppExe "PC Benchmark.exe"
 #define AppUrl "https://github.com/zimbo812/pc-benchmark"
@@ -23,7 +23,7 @@ DisableProgramGroupPage=yes
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 OutputDir=..\build\installer
-OutputBaseFilename=PC-Benchmark-Setup-{#AppVersion}
+OutputBaseFilename=PC-Benchmark-Setup
 SetupIconFile=..\assets\pcbench.ico
 UninstallDisplayIcon={app}\{#AppExe}
 UninstallDisplayName={#AppName} {#AppVersion}
