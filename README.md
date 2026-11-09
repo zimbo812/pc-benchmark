@@ -19,7 +19,8 @@
 
 ## Встановлення
 
-Завантажте `PC-Benchmark-Setup-<версія>.exe` у розділі [Releases](https://github.com/zimbo812/pc-benchmark/releases) і запустіть.
+**[⬇ Завантажити PC-Benchmark-Setup-0.8.exe](https://github.com/zimbo812/pc-benchmark/releases/download/v0.8/PC-Benchmark-Setup-0.8.exe)** (10,5 МБ) і запустити.
+Усі версії — у розділі [Releases](https://github.com/zimbo812/pc-benchmark/releases).
 Установник не потребує прав адміністратора, створює ярлики та за бажанням додає програму в автозапуск Windows.
 
 ## Запуск з вихідного коду
